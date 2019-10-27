@@ -151,6 +151,74 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-MachineLearing-summery" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/10/27/MachineLearing-summery/">机器学习基本概念</a>
+    </h1>
+  
+
+        
+        <a href="/2019/10/27/MachineLearing-summery/" class="archive-article-date">
+  	<time datetime="2019-10-27T14:54:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-27</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="基本术语"><a href="#基本术语" class="headerlink" title="基本术语"></a>基本术语</h1><h2 id="数据集-data-set"><a href="#数据集-data-set" class="headerlink" title="数据集(data set)"></a>数据集(data set)</h2><p>数据的集合,其中每一条记录是关于一个事件或对象的描述,训练样本组成的集合叫做训练集(training set),测试样本组成的集合叫做测试集(test set),所有标记的集合叫做标记空间(label space),一般训练集和测试集是将原数据集进行切割形成的,可以通过sklearn中的方法生成：</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> train_test_split</span><br><span class="line">training_set, testing_set, training_label, testing_label = train_test_split(data_set, label_space, train_size = <span class="number">0.8</span>,test_size = <span class="number">0.2</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="基本假设"><a href="#基本假设" class="headerlink" title="基本假设"></a>基本假设</h2><p>通常假设样本空间中全体样本服从一个未知的分部(distribution),我们获得的每个样本都是独立地从这个分布上采样获得的,即独立同分布(independent and identically distributed, i.i.d). </p>
+<h1 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h1><h2 id="监督学习-supervised-learning"><a href="#监督学习-supervised-learning" class="headerlink" title="监督学习(supervised learning)"></a>监督学习(supervised learning)</h2><p>监督学习的任务是学习一个模型,使模型能够对任意给定的输入,对其相应的输出做一个好的预测.分类(classification)和回归(regression)是监督学习的代表<br>回归问题：<br><img src="/2019/10/27/MachineLearing-summery/regression_example.jpg" alt><br>分类问题：<br><img src="/2019/10/27/MachineLearing-summery/classification_exapmle.jpg" alt></p>
+<h2 id="非监督学习-unsupervised-learning"><a href="#非监督学习-unsupervised-learning" class="headerlink" title="非监督学习(unsupervised learning)"></a>非监督学习(unsupervised learning)</h2><p>非监督学习的训练数据集一般没有标记信息.聚类(clustering)是非监督学习的代表.</p>
+<h3 id="资料来源"><a href="#资料来源" class="headerlink" title="资料来源"></a>资料来源</h3><p>周志华《机器学习》<br>李航《统计学习方法》<br>Andrew Ng《Machine Learning》<br><a href="https://www.coursera.org/course/ml" target="_blank" rel="noopener">https://www.coursera.org/course/ml</a></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/10/27/MachineLearing-summery/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-README" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -171,20 +239,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="欢迎来到我的博客"><a href="#欢迎来到我的博客" class="headerlink" title="欢迎来到我的博客"></a>欢迎来到我的博客</h2><p>这个网站建立的目的是为了总结已经学到的东西，作为自己积累知识技能的一个证明，希望能做到每周更新</p>
-<h2 id="主要包括的内容"><a href="#主要包括的内容" class="headerlink" title="主要包括的内容"></a>主要包括的内容</h2><h3 id="生物学："><a href="#生物学：" class="headerlink" title="生物学："></a>生物学：</h3><pre><code>实验技能
-实验目的
-基础知识
-    生物化学
-    分子生物学
-    细胞生物学</code></pre><h3 id="机器学习入门："><a href="#机器学习入门：" class="headerlink" title="机器学习入门："></a>机器学习入门：</h3><pre><code>监督学习
-非监督学习</code></pre><h3 id="计算机："><a href="#计算机：" class="headerlink" title="计算机："></a>计算机：</h3><pre><code>Python编程基础
-Linux命令行
-R语言编程
-Shell编程
-Biopython源码阅读</code></pre><h3 id="数学："><a href="#数学：" class="headerlink" title="数学："></a>数学：</h3><pre><code>微积分
-线性代数
-概率统计</code></pre>
+        <h1 id="欢迎来到我的博客"><a href="#欢迎来到我的博客" class="headerlink" title="欢迎来到我的博客"></a>欢迎来到我的博客</h1><p>这个网站建立的目的是为了总结已经学到的东西，作为自己积累知识技能的一个证明，希望能做到每周更新</p>
+<h2 id="主要包括的内容"><a href="#主要包括的内容" class="headerlink" title="主要包括的内容"></a>主要包括的内容</h2><h3 id="生物学："><a href="#生物学：" class="headerlink" title="生物学："></a>生物学：</h3><p>实验操作<br>基础知识：<br>&ensp;&ensp;&ensp;&ensp;生物化学<br>&ensp;&ensp;&ensp;&ensp;分子生物学<br>&ensp;&ensp;&ensp;&ensp;细胞生物学</p>
+<h3 id="机器学习入门："><a href="#机器学习入门：" class="headerlink" title="机器学习入门："></a>机器学习入门：</h3><p>监督学习<br>非监督学习</p>
+<h3 id="计算机："><a href="#计算机：" class="headerlink" title="计算机："></a>计算机：</h3><p>Python编程基础<br>Linux命令行<br>R语言编程<br>Shell编程<br>Biopython源码阅读</p>
+<h3 id="数学："><a href="#数学：" class="headerlink" title="数学："></a>数学：</h3><p>微积分<br>线性代数<br>概率统计</p>
+
       
 
       
